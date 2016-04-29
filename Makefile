@@ -26,7 +26,7 @@ BIN= $(BINDIR)eqemu-login-helper
 default all: $(BIN)
 
 $(BIN): $(OBJS)
-	$(CXX) -o $@ $^ $(CFLAGS)
+	$(CXX) -o $@ $^
 
 $(OBJDIR)%.o: $(SRCDIR)%.cpp $(DEPS)
 	$(CXX) -c -o $@ $< $(CFLAGS)
